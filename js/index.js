@@ -39,7 +39,7 @@ const siteContent = {
 
 // Example: Update the img src for the logo
 let logo = document.getElementById("logo-img");
-logo.setAttribute('src', siteContent["nav"]["img-src"])
+logo.setAttribute('src', siteContent["nav"]["img-src"]);
 
 //===============My code===============
 
@@ -50,3 +50,27 @@ navAnchors[2].textContent = siteContent.nav['nav-item-3'];
 navAnchors[3].textContent = siteContent.nav['nav-item-4'];
 navAnchors[4].textContent = siteContent.nav['nav-item-5'];
 navAnchors[5].textContent = siteContent.nav['nav-item-6'];
+
+const headerTitle = document.querySelector('.cta h1');
+headerTitle.innerHTML = siteContent.cta['h1'];
+
+const headerButton = document.querySelector(".cta button");
+headerButton.innerHTML = siteContent.cta["button"];
+
+const headerImg = document.getElementById("cta-img");
+headerImg.setAttribute("src", siteContent.cta["img-src"]);
+
+const textHeaders = document.querySelectorAll(".text-content h4");
+textHeaders[0].textContent = siteContent["main-content"]["features-h4"];
+textHeaders[1].textContent = siteContent["main-content"]["about-h4"];
+textHeaders[2].textContent = siteContent["main-content"]["services-h4"];
+textHeaders[3].textContent = siteContent["main-content"]["product-h4"];
+textHeaders[4].textContent = siteContent["main-content"]["vision-h4"];
+
+const mainParagraphs = document.querySelectorAll(".text-content h4");
+mainParagraphs[0].textContent = siteContent["main-content"]["features-content"];
+mainParagraphs[1].textContent = siteContent["main-content"]["about-content"];
+mainParagraphs[2].textContent = siteContent["main-content"]["services-content"];
+mainParagraphs[3].textContent = siteContent["main-content"]["product-content"];
+mainParagraphs[4].textContent = siteContent["main-content"]["vision-content"];
+
