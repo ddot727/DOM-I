@@ -109,7 +109,7 @@ legalNav.setAttribute("href", "#");
 legalNav.innerHTML = "Legal";
 nav.appendChild(legalNav);
 
-//Prepending Home nav tag
+//Prepending Home nav tag 
 const homeNav = document.createElement("a");
 homeNav.setAttribute("href", "#");
 homeNav.innerHTML = "Home";
