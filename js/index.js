@@ -87,3 +87,9 @@ middleImg.setAttribute("src", siteContent["main-content"]["middle-img-src"]);
 //Contact Header
 const contactHeader = document.querySelector('.contact h4');
 contactHeader.textContent = siteContent.contact['contact-h4'];
+
+//Contact Info
+const contactInfo = document.querySelectorAll(".contact p");
+contactInfo[0].textContent = siteContent["contact"]["address"];
+contactInfo[1].textContent = siteContent["contact"]["phone"];
+contactInfo[2].textContent = siteContent["contact"]["email"];
