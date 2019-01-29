@@ -54,7 +54,7 @@ navAnchors[5].textContent = siteContent.nav['nav-item-6'];
 
 //Header 
 const headerTitle = document.querySelector('.cta h1');
-headerTitle.innerHTML = siteContent.cta['h1'];
+headerTitle.innerHTML = "DOM<br> Is<br> Awesome"
 
 //Get Started button
 const headerButton = document.querySelector(".cta button");
@@ -93,3 +93,7 @@ const contactInfo = document.querySelectorAll(".contact p");
 contactInfo[0].textContent = siteContent["contact"]["address"];
 contactInfo[1].textContent = siteContent["contact"]["phone"];
 contactInfo[2].textContent = siteContent["contact"]["email"];
+
+//Footer
+const footerCR = document.querySelector("footer p");
+footerCR.textContent = siteContent["footer"]["copyright"];
