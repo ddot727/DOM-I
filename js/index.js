@@ -98,8 +98,10 @@ contactInfo[2].textContent = siteContent["contact"]["email"];
 const footerCR = document.querySelector("footer p");
 footerCR.textContent = siteContent["footer"]["copyright"];
 
-//Changing nav text color
-
+// //Changing nav text color
+// navAnchors.forEach(element => {
+//   element.style.color = "green";
+// });
 
 
 //Appending Legal Information
@@ -114,3 +116,8 @@ const homeNav = document.createElement("a");
 homeNav.setAttribute("href", "#");
 homeNav.innerHTML = "Home";
 nav.prepend(homeNav);
+
+//Changing nav text color
+navAnchors.forEach(element => {
+  element.style.color = "green";
+});
