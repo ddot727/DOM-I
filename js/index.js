@@ -43,6 +43,7 @@ logo.setAttribute('src', siteContent["nav"]["img-src"]);
 
 //===============My code===============
 
+//navigation tags
 const navAnchors = document.querySelectorAll('a');
 navAnchors[0].textContent = siteContent.nav['nav-item-1'];
 navAnchors[1].textContent = siteContent.nav['nav-item-2'];
@@ -51,15 +52,19 @@ navAnchors[3].textContent = siteContent.nav['nav-item-4'];
 navAnchors[4].textContent = siteContent.nav['nav-item-5'];
 navAnchors[5].textContent = siteContent.nav['nav-item-6'];
 
+//Header 
 const headerTitle = document.querySelector('.cta h1');
 headerTitle.innerHTML = siteContent.cta['h1'];
 
+//Get Started button
 const headerButton = document.querySelector(".cta button");
 headerButton.innerHTML = siteContent.cta["button"];
 
+//Header Image
 const headerImg = document.getElementById("cta-img");
 headerImg.setAttribute("src", siteContent.cta["img-src"]);
 
+//Content Titles
 const textHeaders = document.querySelectorAll(".text-content h4");
 textHeaders[0].textContent = siteContent["main-content"]["features-h4"];
 textHeaders[1].textContent = siteContent["main-content"]["about-h4"];
@@ -67,10 +72,15 @@ textHeaders[2].textContent = siteContent["main-content"]["services-h4"];
 textHeaders[3].textContent = siteContent["main-content"]["product-h4"];
 textHeaders[4].textContent = siteContent["main-content"]["vision-h4"];
 
-const mainParagraphs = document.querySelectorAll(".text-content h4");
+//Content Paragraphs
+const mainParagraphs = document.querySelectorAll(".text-content p");
 mainParagraphs[0].textContent = siteContent["main-content"]["features-content"];
 mainParagraphs[1].textContent = siteContent["main-content"]["about-content"];
 mainParagraphs[2].textContent = siteContent["main-content"]["services-content"];
 mainParagraphs[3].textContent = siteContent["main-content"]["product-content"];
 mainParagraphs[4].textContent = siteContent["main-content"]["vision-content"];
+
+//Middle Image
+const middleImg = document.getElementById("middle-img");
+middleImg.setAttribute("src", siteContent["main-content"]["middle-img-src"]);
 
